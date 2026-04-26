@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio – S1.01</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style/comp.css">
+    <link rel="stylesheet" href="/style/style.css">
+  </head>
+  <body>
+
+    <!-- ══ HEADER ══ -->
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <div class="logo" onclick="location.href='../portfolio.html'">CARRIOU Alexandre</div>
+          <nav>
+            <a href="../portfolio.html">Accueil</a>
+            <a href="../comp-but1.html">BUT1</a>
+            <a href="#preuves">Preuves</a>
+            <a href="#analyse">Analyse</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+
+      <!-- ══ BREADCRUMB ══ -->
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="../portfolio.html">Accueil</a>
+          <span>/</span>
+          S1.01
+        </div>
+      </div>
+
+      <!-- ══ HERO ══ -->
+      <section class="page-hero">
+        <div class="container">
+          <span class="competence-badge">COMPÉTENCE 1 · BUT1</span>
+          <h1>Réaliser</h1>
+          <p class="subtitle">
+            Développer (c'est-à-dire concevoir, coder, tester et intégrer) une solution informatique pour
+            <em>traiter un problème métier</em>.
+          </p>
+          <div class="tag-row" style="margin-top:1.4rem;">
+            <span class="tag">AC11.01</span>
+            <span class="tag">AC11.02</span>
+            <span class="tag">AC11.03</span>
+            <span class="tag tag-blue">SAE 1.01</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══ APPRENTISSAGES CRITIQUES ══ -->
+      <section id="ac">
+        <div class="container">
+          <h2 class="section-title">Apprentissages critiques</h2>
+          <div class="ac-grid">
+
+            <div class="ac-card fade-in">
+              <span class="ac-badge">AC11.01</span>
+              <h3>Implémenter des conceptions simples</h3>
+              <p>Traduire une conception en code fonctionnel en respectant les spécifications et les langages cibles (Python, HTML/CSS, SQL…).</p>
+            </div>
+
+            <div class="ac-card fade-in">
+              <span class="ac-badge">AC11.02</span>
+              <h3>Élaborer des conceptions simples</h3>
+              <p>Analyser un besoin client et proposer une architecture ou un algorithme adapté avant toute implémentation.</p>
+            </div>
+
+            <div class="ac-card fade-in">
+              <span class="ac-badge">AC11.03</span>
+              <h3>Faire des essais et évaluer leurs résultats</h3>
+              <p>Tester systématiquement la solution produite et comparer les résultats obtenus aux spécifications initiales.</p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <div class="container"><div class="divider"></div></div>
+
+      <!-- ══ SAE ══ -->
+      <section id="sae">
+        <div class="container">
+          <h2 class="section-title">SAE 1.01 — Implémentation d'un besoin client</h2>
+
+          <div class="terminal-block fade-in">
+            <div class="terminal-topbar">
+              <div class="dot dot-r"></div>
+              <div class="dot dot-y"></div>
+              <div class="dot dot-g"></div>
+              <span class="terminal-label">SAE_1.01 · CONTEXTE</span>
+            </div>
+            <div class="terminal-body">
+              <h4><span class="prompt">$</span> cat contexte.md</h4>
+              <p>
+                La SAE 1.01 avait pour objectif de répondre à un besoin client concret en développant
+                un jeu de Reversi/Othello en java sans interface graphique. Le projet impliquait d'analyser le cahier des charges,
+                de concevoir une architecture adaptée, puis d'implémenter et de tester une partie de l'application.
+              </p>
+              <p>
+                Ce travail mobilise directement les trois apprentissages critiques de la compétence
+                <span class="highlight-green">Réaliser</span> : de la conception initiale jusqu'à
+                la vérification du bon fonctionnement du jeu en regard des spécifications.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ══ PREUVES ══ -->
+      <section id="preuves">
+        <div class="container">
+          <h2 class="section-title">Preuves</h2>
+
+          <!-- Preuves Ressources -->
+          <h3 style="color:var(--cyber-purple);font-size:1rem;margin-bottom:1rem;letter-spacing:.05em;">
+            ▸ Preuves « Ressources »
+          </h3>
+          <div class="proof-grid">
+
+            <div class="proof-card fade-in">
+              <span class="proof-type">Ressource · R1.01</span>
+              <h4>Introduction au développement</h4>
+              <p>Exercices d'algorithmique et premiers programmes Java illustrant l'implémentation de conceptions simples.</p>
+              <a href="#" class="btn-link">→ Voir les TPs</a>
+            </div>
+
+            <div class="proof-card fade-in">
+              <span class="proof-type">Ressource · R1.02</span>
+              <h4>Développement d'interfaces Web</h4>
+              <p>TP HTML/CSS montrant la conception et l'implémentation de maquettes en réponse à un cahier des charges en une heure.</p>
+              <a href="#" class="btn-link">→ Voir l'évaluation</a>
+            </div>
+
+            <div class="proof-card fade-in">
+              <span class="proof-type">Ressource · R1.03</span>
+              <h4>Introduction aux bases de données</h4>
+              <p>Modélisation et requêtes SQL réalisées lors des séances de TP, validant la capacité à élaborer une conception simple.</p>
+              <a href="#" class="btn-link">→ Voir le dernier TP</a>
+            </div>
+
+          </div>
+
+          <!-- Preuves SAE -->
+          <h3 style="color:var(--cyber-purple);font-size:1rem;margin:1.5rem 0 1rem;letter-spacing:.05em;">
+            ▸ Preuves « SAE »
+          </h3>
+          <div class="proof-grid">
+
+            <div class="proof-card fade-in">
+              <span class="proof-type">SAE 1.01 · Livrable</span>
+              <h4>Code source de l'application</h4>
+              <p>Le projet du développement du jeu Othello/Reversi en Java</p>
+              <a href="#" class="btn-link">→ Voir la SAE</a>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <div class="container"><div class="divider"></div></div>
+
+      <!-- ══ ANALYSE & RÉFLEXIVITÉ ══ -->
+      <section id="analyse">
+        <div class="container">
+          <h2 class="section-title">Analyse & Réflexivité</h2>
+          <div class="analyse-stack">
+
+            <!-- Q1 -->
+            <div class="analyse-card fade-in">
+              <div class="analyse-header">
+                <div class="q-number">Q1</div>
+                <h3>Qu'est-ce que j'ai appris en réalisant cette SAE ?</h3>
+              </div>
+              <div class="analyse-body">
+                <p>
+                  La SAE 1.01 m'a permis de comprendre concrètement l'écart qui existe entre
+                  <span class="highlight">concevoir</span> une solution sur le papier et
+                  <span class="highlight">l'implémenter</span>.
+                  J'ai découvert que la phase de conception (AC11.02) est déterminante : une architecture
+                  mal pensée déboucheà coup sûr sur du code difficile à écrire et modifier.
+                </p>
+                <p>
+                  Sur le plan technique, j'ai renforcé ma maîtrise du langage Java, notamment les
+                  structures de données (tableaux à deux dimensions), les fonctions et la gestion d'un dépôt git en collaboration. J'ai aussi appris à lire et interpréter un cahier
+                  des charges, ce qui est fondamental pour répondre correctement au besoin client.
+                </p>
+                <p>
+                  Enfin, j'ai pris conscience de l'importance des <span class="highlight-green">tests (AC11.03)</span> :
+                  sans une démarche de vérification rigoureuse, il est impossible de savoir si le
+                  produit livré satisfait la demande.
+                </p>
+                <div class="tag-row">
+                  <span class="tag">Conception</span>
+                  <span class="tag tag-blue">PythonJava</span>
+                  <span class="tag">Tests</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Q2 -->
+            <div class="analyse-card fade-in">
+              <div class="analyse-header">
+                <div class="q-number">Q2</div>
+                <h3>Quelles difficultés ai-je rencontrées et comment les ai-je surmontées ?</h3>
+              </div>
+              <div class="analyse-body">
+                <p>
+                  La principale difficulté a été de <span class="highlight">décomposer le problème</span>
+                  en sous-problèmes biens découpés et facilement résolvables. Face au cahier des charges initial, j'ai eu tendance
+                  à vouloir tout coder d'un coup, ce qui a rapidement conduit à des erreurs en
+                  cascade difficiles à déboguer et l'incompréhension de mon coéquipier.
+                </p>
+                <p>
+                  J'ai surmonté cet obstacle en adoptant une approche <span class="highlight-green">incrémentale</span> :
+                  tester chaque fonction indépendamment avant de les assembler. Cela correspond
+                  directement à l'AC11.03,faire des essais unitaires à chaque étape, plutôt qu'en toute fin de projet.
+                </p>
+                <p>
+                  J'ai également eu du mal à estimer le temps nécessaire entre chaque tâche.
+                  Cette expérience m'a appris à mieux planifier en réservant du temps pour les
+                  problèmes et les tests, qui sont souvent sous-estimés.
+                </p>
+              </div>
+            </div>
+
+            <!-- Q3 -->
+            <div class="analyse-card fade-in">
+              <div class="analyse-header">
+                <div class="q-number">Q3</div>
+                <h3>Comment ce travail valide-t-il les apprentissages critiques de la compétence Réaliser ?</h3>
+              </div>
+              <div class="analyse-body">
+                <p>
+                  <span class="highlight-green">AC11.01 : Implémenter des conceptions simples :</span>
+                  le code source livré démontre ma capacité à traduire une spécification en programme
+                  fonctionnel. Les choix d'implémentation (algorithmes, structures) sont documentés.
+                </p>
+                <p>
+                  <span class="highlight-green">AC11.02 : Élaborer des conceptions simples :</span>
+                  l'ordonancement des méthodes effectués en début de projet attestent d'une
+                  phase de conception menée avant tout codage. J'ai su identifier quels actions développer avant les autres
+                  et proposer une architecture adaptée.
+                </p>
+                <p>
+                  <span class="highlight-green">AC11.03 – Faire des essais et évaluer leurs résultats :</span>
+                  le code comprend quelques méthodes de tests sur les fonctions les plus délicate et montrent le bon fonctionnement de celles ci.
+                </p>
+              </div>
+            </div>
+
+            <!-- Q4 -->
+            <div class="analyse-card fade-in">
+              <div class="analyse-header">
+                <div class="q-number">Q4</div>
+                <h3>Que ferais-je différemment si je recommençais ?</h3>
+              </div>
+              <div class="analyse-body">
+                <p>
+                  Je consacrerais davantage de temps à la <span class="highlight">phase de conception</span>
+                  avant d'écrire la première ligne de code. La tentation de "coder directement" est
+                  forte mais inefficace : un schéma clair en amont évite une grande partie des
+                  erreurs.
+                </p>
+                <p>
+                  J'écrirais également mes <span class="highlight-green">tests en parallèle du code</span>,
+                  voire avant, plutôt qu'en fin de projet.
+                  Cela m'aurait permis de détecter des bugs bien plus tôt et de gagner pas mal de temps
+                  précieux lors de la phase de débogage.
+                </p>
+                <div class="tag-row">
+                  <span class="tag">Architecture</span>
+                  <span class="tag">Planification</span>
+                </div>
+              </div>
+            </div>
+
+          </div><!-- /analyse-stack -->
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ══ FOOTER ══ -->
+    <footer>
+      <div class="container">
+        <p></p>
+      </div>
+    </footer>
+
+  </body>
+</html>

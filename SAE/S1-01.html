@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio – S1.01</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style/comp.css">
+    <link rel="stylesheet" href="/style/style.css">
+  </head>
+  <body>
+
+    <!-- ══ HEADER ══ -->
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <div class="logo" onclick="location.href='../portfolio.html'">CARRIOU Alexandre</div>
+          <nav>
+            <a href="../portfolio.html">Accueil</a>
+            <a href="../comp-but1.html">BUT1</a>
+            <a href="#preuves">Preuves</a>
+            <a href="#analyse">Analyse</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+
+      <!-- ══ BREADCRUMB ══ -->
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="../portfolio.html">Accueil</a>
+          <span>/</span>
+          S1.01
+        </div>
+      </div>
+
+      <!-- ══ HERO ══ -->
+      <section class="page-hero">
+        <div class="container">
+          <span class="competence-badge">S1.01</span>
+          <h1>Projet SAE 1.01</h1>
+          <p class="subtitle">
+            Implémentation d'un besoin client, c'est à dire créer une application permettant de répondre
+	    à un problème/demande d'un client.
+          </p>
+          <div class="tag-row" style="margin-top:1.4rem;">
+            <span class="tag">AC11.01</span>
+            <span class="tag">AC11.02</span>
+            <span class="tag">AC11.03</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══ APPRENTISSAGES CRITIQUES ══ -->
+      <section id="ac">
+        <div class="container">
+          <h2 class="section-title">Apprentissages critiques</h2>
+          <div class="ac-grid">
+
+            <div class="ac-card fade-in">
+              <span class="ac-badge">AC11.01</span>
+              <h3>Implémenter des conceptions simples</h3>
+              <p>Traduire une conception en code fonctionnel en respectant les spécifications et les langages cibles (Python, HTML/CSS, SQL…).</p>
+            </div>
+
+            <div class="ac-card fade-in">
+              <span class="ac-badge">AC11.02</span>
+              <h3>Élaborer des conceptions simples</h3>
+              <p>Analyser un besoin client et proposer une architecture ou un algorithme adapté avant toute implémentation.</p>
+            </div>
+
+            <div class="ac-card fade-in">
+              <span class="ac-badge">AC11.03</span>
+              <h3>Faire des essais et évaluer leurs résultats</h3>
+              <p>Tester systématiquement la solution produite et comparer les résultats obtenus aux spécifications initiales.</p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <div class="container"><div class="divider"></div></div>
+
+      <!-- ══ SAE ══ -->
+      <section id="sae">
+        <div class="container">
+          <h2 class="section-title">SAE 1.01 — Implémentation d'un besoin client</h2>
+
+          <div class="terminal-block fade-in">
+            <div class="terminal-topbar">
+              <div class="dot dot-r"></div>
+              <div class="dot dot-y"></div>
+              <div class="dot dot-g"></div>
+              <span class="terminal-label">SAE_1.01 · CONTEXTE</span>
+            </div>
+            <div class="terminal-body">
+              <h4><span class="prompt">$</span> cat contexte.md</h4>
+              <p>
+                La SAE 1.01 avait pour objectif de répondre à un besoin client concret en développant
+                un jeu de Reversi/Othello en java sans interface graphique. Le projet impliquait d'analyser le cahier des charges,
+                de concevoir une architecture adaptée, puis d'implémenter et de tester une partie de l'application.
+		Il fallait également créer un robot contre qui jouer en mode "solo". Nous avons pris la liberté d'en créer deux de deux difficultés différentes.
+              </p>
+              <p>
+                Ce travail mobilise directement les trois apprentissages critiques de la compétence
+                <span class="highlight-green">Réaliser</span> : de la conception initiale jusqu'à
+                la vérification du bon fonctionnement du jeu en regard des spécifications.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <div class="container"><div class="divider"></div></div>
+
+      <!-- ══ ANALYSE & RÉFLEXIVITÉ ══ -->
+      <section id="analyse">
+        <div class="container">
+          <h2 class="section-title">Analyse & Réflexivité</h2>
+          <div class="analyse-stack">
+
+            <!-- Q1 -->
+            <div class="analyse-card fade-in">
+              <div class="analyse-header">
+                <div class="q-number">Q1</div>
+                <h3>Quelles ont été vos démarches, prises de décisions, degré d'implication et d'autonomie ?</h3>
+              </div>
+              <div class="analyse-body">
+                <p>
+                  Pour cette SAE, nous avons d'abord essayé de définir un plan de l'ordre des méthodes à développer
+		  puis nous avons commencer à coder. Nous avons commencé très en avance mais avons perdu du temps
+		  sur des modifications d'architectures car nous avions oubliés certains problèmes lors de la
+		  conception. Malgré cela, nous avons terminés en avance sans avoir besoin d'aucune aide externe.
+                </p>
+
+              </div>
+            </div>
+
+            <!-- Q2 -->
+            <div class="analyse-card fade-in">
+              <div class="analyse-header">
+                <div class="q-number">Q2</div>
+                <h3>Quelles ressources avez vous choisies et combinées pour réaliser vos tâches et résoudre les problèmes rencontrés dans cette SAE ?</h3>
+              </div>
+              <div class="analyse-body">
+                <p>
+                  J'ai utilisé quasiment exclusivement la ressource une, le développement en Java en
+		  complément de mes connaissances personelles en algorithmique et qualité de développement.
+		</p>
+		<p>
+		  Cette ressource est exactement celle qui falait utiliser, elle traite du développement en Java, des structures de données à utiliser et des tests unitaires. Tout ceci était très utile durant cette SAE.
+                </p>
+              </div>
+            </div>
+
+            <!-- Q3 -->
+            <div class="analyse-card fade-in">
+              <div class="analyse-header">
+                <div class="q-number">Q3</div>
+                <h3>En quoi cela valide t'il la maîtrise des apprentissages critiques ?</h3>
+              </div>
+              <div class="analyse-body">
+                <p>
+		  <span class="highlight-green">AC11.01 : Implémenter des conceptions simples :</span>
+                  le code source livré démontre ma capacité à traduire une spécification en programme
+                  fonctionnel. Les choix d'implémentation (algorithmes, structures) sont documentés.
+                </p>
+                <p>
+		  <span class="highlight-green">AC11.02 : Élaborer des conceptions simples :</span>
+                  l'ordonancement des méthodes effectués (voir le <span class="highlight">main</span> en
+		  début de projet attestent d'une phase de conception menée avant tout codage. J'ai su
+		  identifier quels actions développer avant les autres et proposer une architecture cohérente.
+                </p>
+                <p>
+                  <span class="highlight-green">AC11.03 – Faire des essais et évaluer leurs résultats :</span>
+                  le code comprend quelques méthodes de tests sur les fonctions les plus délicate et montrent le bon fonctionnement de celles ci.
+                </p>
+              </div>
+            </div>
+
+            <!-- Q4 -->
+            <div class="analyse-card fade-in">
+              <div class="analyse-header">
+                <div class="q-number">Q4</div>
+                <h3>Que ferais-je différemment si je recommençais ?</h3>
+              </div>
+              <div class="analyse-body">
+                <p>
+                  Je consacrerais davantage de temps à la <span class="highlight">phase de conception</span>
+                  avant d'écrire la première ligne de code. La tentation de "coder directement" est
+                  forte mais inefficace : un schéma clair en amont évite une grande partie des
+                  erreurs.
+                </p>
+                <p>
+                  J'écrirais également mes <span class="highlight-green">tests en parallèle du code</span>,
+                  voire avant, plutôt qu'en fin de projet.
+                  Cela m'aurait permis de détecter des bugs bien plus tôt et de gagner pas mal de temps
+                  précieux lors de la phase de débogage.
+                </p>
+		<p>
+		  Aussi, il aurait pu être pertinent d'utiliser des notions de matrices vu en
+		  R1.07 (mathématiques fondamentales) pour améliorer l'exploration des matrices,
+		  ce qui aurait pu rendre l'algorithme plus rapide.
+		</p>
+		
+                <div class="tag-row">
+                  <span class="tag">Architecture</span>
+                  <span class="tag">Planification</span>
+                </div>
+              </div>
+            </div>
+
+          </div><!-- /analyse-stack -->
+        </div>
+      </section>
+
+      <div class="container"><div class="divider"></div></div>
+
+      <section id="traces">
+	<div class="container">
+	  <h2 class="section-title">Travaux réalisés</h2>
+	  
+	  <div class="projects-grid">
+            <div class="project-card">
+              <div class="project-header">
+		<h3>Dépôt git de l'application</h3>
+              </div>
+              <div class="project-body">
+		<p>Le dépôt git contenant le code source de la SAE 1.01 en java.</p>
+		<a href="https://github.com/OuahLePleutre/Reversi_S1.03" class="btn">Voir le dépôt</a>
+              </div>
+            </div>
+	  </div>
+	</div>
+      </section>
+      
+
+    </main>
+
+    <!-- ══ FOOTER ══ -->
+    <footer>
+      <div class="container">
+        <p></p>
+      </div>
+    </footer>
+
+  </body>
+</html>

@@ -1,0 +1,388 @@
+/*
+ * comp.css — Styles spécifiques aux pages de compétences
+ * Requiert style.css (variables, reset, header, nav, section, .tag, .btn, .fade-in…)
+ */
+
+/* ══════════════════════════════════════════
+   BREADCRUMB
+   ══════════════════════════════════════════ */
+.breadcrumb {
+    padding: 1.2rem 0;
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    border-bottom: 1px solid rgba(0, 255, 65, 0.1);
+}
+
+.breadcrumb a {
+    color: var(--cyber-blue);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.breadcrumb a:hover {
+    color: var(--cyber-green);
+}
+
+.breadcrumb span {
+    margin: 0 0.5rem;
+}
+
+/* ══════════════════════════════════════════
+   PAGE HERO (compétence)
+   ══════════════════════════════════════════ */
+.page-hero {
+    padding: 3.5rem 0 2rem;
+}
+
+.competence-badge {
+    display: inline-block;
+    background: rgba(0, 255, 65, 0.08);
+    border: 1px solid rgba(0, 255, 65, 0.4);
+    color: var(--cyber-green);
+    font-size: 0.8rem;
+    padding: 0.35rem 1rem;
+    border-radius: 3px;
+    margin-bottom: 1.2rem;
+    letter-spacing: 0.1em;
+}
+
+.page-hero h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.6rem;
+    background: linear-gradient(135deg, var(--cyber-green), var(--cyber-blue));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 0.8rem;
+}
+
+.page-hero .subtitle {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    max-width: 600px;
+}
+
+.page-hero .subtitle em {
+    color: var(--cyber-blue);
+    font-style: normal;
+}
+
+/* ══════════════════════════════════════════
+   TAG VARIANTS & TAG ROW
+   (.tag existe déjà dans style.css)
+   ══════════════════════════════════════════ */
+.tag-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.tag-blue {
+    background: rgba(0, 217, 255, 0.08);
+    color: var(--cyber-blue);
+    border-color: rgba(0, 217, 255, 0.25);
+}
+
+/* ══════════════════════════════════════════
+   DIVISEUR
+   ══════════════════════════════════════════ */
+.divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--cyber-green), transparent);
+    opacity: 0.3;
+    margin: 1rem 0 2rem;
+}
+
+/* ══════════════════════════════════════════
+   CARTES APPRENTISSAGES CRITIQUES
+   ══════════════════════════════════════════ */
+.ac-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.ac-card {
+    background: var(--bg-card);
+    border: 1px solid rgba(0, 217, 255, 0.25);
+    border-radius: 8px;
+    padding: 1.5rem;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.ac-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--cyber-blue);
+    transition: width 0.3s;
+}
+
+.ac-card:hover {
+    border-color: var(--cyber-blue);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(0, 217, 255, 0.2);
+}
+
+.ac-card:hover::before {
+    width: 6px;
+}
+
+.ac-badge {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--cyber-blue);
+    letter-spacing: 0.08em;
+    margin-bottom: 0.6rem;
+}
+
+.ac-card h3 {
+    color: var(--text-primary);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.ac-card p {
+    color: var(--text-secondary);
+    font-size: 0.88rem;
+}
+
+/* ══════════════════════════════════════════
+   TERMINAL BLOCK (inline, différent de .terminal-window)
+   ══════════════════════════════════════════ */
+.terminal-block {
+    background: var(--bg-card);
+    border: 1px solid rgba(0, 255, 65, 0.25);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    transition: border-color 0.3s;
+}
+
+.terminal-block:hover {
+    border-color: var(--cyber-green);
+}
+
+.terminal-topbar {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 0.6rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-bottom: 1px solid rgba(0, 255, 65, 0.15);
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.dot-r { background: var(--cyber-red); }
+.dot-y { background: #ffaa00; }
+.dot-g { background: var(--cyber-green); }
+
+.terminal-label {
+    margin-left: auto;
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    letter-spacing: 0.08em;
+}
+
+.terminal-body {
+    padding: 1.8rem 2rem;
+}
+
+.terminal-body h4 {
+    color: var(--cyber-green);
+    margin-bottom: 1rem;
+    font-size: 1.05rem;
+}
+
+.terminal-body p {
+    color: var(--text-secondary);
+    font-size: 0.92rem;
+    margin-bottom: 1rem;
+    line-height: 1.8;
+}
+
+.terminal-body p:last-child {
+    margin-bottom: 0;
+}
+
+.terminal-body .prompt {
+    color: var(--cyber-green);
+    margin-right: 0.5rem;
+}
+
+/* ══════════════════════════════════════════
+   CARTES PREUVES
+   ══════════════════════════════════════════ */
+.proof-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.proof-card {
+    background: var(--bg-card);
+    border: 1px solid rgba(180, 0, 255, 0.25);
+    border-radius: 8px;
+    padding: 1.5rem;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.proof-card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, var(--cyber-purple), transparent);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s;
+}
+
+.proof-card:hover {
+    border-color: var(--cyber-purple);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(180, 0, 255, 0.15);
+}
+
+.proof-card:hover::after {
+    transform: scaleX(1);
+}
+
+.proof-type {
+    display: block;
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--cyber-purple);
+    margin-bottom: 0.7rem;
+}
+
+.proof-card h4 {
+    color: var(--text-primary);
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.proof-card p {
+    color: var(--text-secondary);
+    font-size: 0.87rem;
+}
+
+.proof-card .btn-link {
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: 0.82rem;
+    color: var(--cyber-blue);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s;
+}
+
+.proof-card .btn-link:hover {
+    color: var(--cyber-green);
+    border-bottom-color: var(--cyber-green);
+}
+
+/* ══════════════════════════════════════════
+   ANALYSE & RÉFLEXIVITÉ
+   ══════════════════════════════════════════ */
+.analyse-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.analyse-card {
+    background: var(--bg-card);
+    border: 1px solid rgba(0, 255, 65, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: border-color 0.3s;
+}
+
+.analyse-card:hover {
+    border-color: rgba(0, 255, 65, 0.5);
+}
+
+.analyse-header {
+    padding: 1.2rem 1.8rem;
+    background: rgba(0, 255, 65, 0.05);
+    border-bottom: 1px solid rgba(0, 255, 65, 0.15);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.q-number {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.1rem;
+    color: var(--cyber-green);
+    background: rgba(0, 255, 65, 0.1);
+    border: 1px solid rgba(0, 255, 65, 0.3);
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    flex-shrink: 0;
+}
+
+.analyse-header h3 {
+    color: var(--text-primary);
+    font-size: 0.98rem;
+    font-weight: 600;
+}
+
+.analyse-body {
+    padding: 1.8rem;
+    color: var(--text-secondary);
+    font-size: 0.92rem;
+    line-height: 1.85;
+}
+
+.analyse-body p {
+    margin-bottom: 0.9rem;
+}
+
+.analyse-body p:last-child {
+    margin-bottom: 0;
+}
+
+/* ══════════════════════════════════════════
+   UTILITAIRES INLINE
+   ══════════════════════════════════════════ */
+.highlight       { color: var(--cyber-blue); }
+.highlight-green { color: var(--cyber-green); }
+
+/* ══════════════════════════════════════════
+   RESPONSIVE (ajouts propres aux pages compétences)
+   ══════════════════════════════════════════ */
+@media (max-width: 768px) {
+    .page-hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .ac-grid,
+    .proof-grid {
+        grid-template-columns: 1fr;
+    }
+}
